@@ -19,12 +19,8 @@
 }
 .dot {
     background-color: transparent; /* Remplacez #ff0000 par la couleur de votre choix */
-    color: #70bbe4;
-    
+    color: #70bbe4;    
 }
-
-
-
 
 .embed-container {
     position: relative;
@@ -40,9 +36,17 @@
     position: absolute;
     top: 30px;
     left: 0;
-    width: 100%;
+    width: 100%; /* Utilisation de 100% pour la largeur */
     height: 110%;
 }
+
+@media screen and (max-width: 767px) {
+    .embed-container iframe {
+        width: 100%; /* Réduire la largeur pour les écrans de téléphone */
+        height: 70vh; /* Ajuster la hauteur si nécessaire */
+    }
+}
+
 /* Styles pour l'infobulle */
 .item-hints {
     --purple: #720c8f;
